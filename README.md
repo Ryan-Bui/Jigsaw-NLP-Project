@@ -2,8 +2,9 @@
 
 # Project Title
 
-* **One Sentence Summary** Ex: This repository holds an attempt to apply LSTMs to Stock Market using data from
-"Get Rich" Kaggle challenge (provide link). 
+* This repository holds an attempt to apply the pre-trained model BERT to news comments from the "Jigsaw Unintended Bias in Toxicity Classification" Kaggle challenge in order to detect toxicity in these news comments. 
+* https://www.kaggle.com/competitions/jigsaw-unintended-bias-in-toxicity-classification
+
 
 ## Overview
 
