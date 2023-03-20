@@ -20,15 +20,14 @@ Include only the sections that are relevant an appropriate.
 ### Data
 
 * Data:
-  * Type: For example
-    * Input: medical images (1000x1000 pixel jpegs), CSV file: image filename -> diagnosis
-    * Input: CSV file of features, output: signal/background flag in 1st column.
-  * Size: How much data?
-  * Instances (Train, Test, Validation Split): how many data points? Ex: 1000 patients for training, 200 for testing, none for validation
-
+  * Type: The data is reprseneted in csv files which have many features however we will only focus on one column for this challenge and that is the comment_text column which displays each users comment. This is what will be our input variable. Our target or output variable will be the target column which contains the ratio of people who rated specific comment toxic.
+   
+  * Size: There is about 1.21GB of data given by the challenge
+  * The challenge gives us a training set of over 1 million data points and 100000 test points however for the sake of time we will only use 100000 training points 100000 test points and we will set aside 20000 data points for validation. 1
 #### Preprocessing / Clean up
 
-* Describe any manipulations you performed to the data.
+* I had to do some preprocessing on the comment text before I could put it into the model. This involved lemmatizing the words, removing special characters, removing stop words, and punctuation. 
+* Per the challenge's request in the target column I made it so that if the value was greater than or equal to 0.5 then I would change to 1 and if it was less than 0.5 I would change it to a 0. 
 
 #### Data Visualization
 
