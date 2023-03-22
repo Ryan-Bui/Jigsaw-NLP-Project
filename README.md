@@ -60,6 +60,7 @@ Show a few visualization of the data and say a few words about what you see.
 * Clearly define the key performance metric(s).
 * Show/compare results in one table.
 * Show one (or few) visualization(s) of results, for example ROC curves.
+![](metric_table.PNG)
 ![](roc_curve.PNG)
 
 ### Conclusions
