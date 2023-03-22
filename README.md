@@ -54,6 +54,7 @@ Show a few visualization of the data and say a few words about what you see.
   * How did you decide to stop training.
   * Any difficulties? How did you resolve them?
 ![](training_loss_graph.PNG)
+
 ### Performance Comparison
 
 * Clearly define the key performance metric(s).
