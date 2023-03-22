@@ -53,7 +53,7 @@ Show a few visualization of the data and say a few words about what you see.
   * Training curves (loss vs epoch for test/train).
   * How did you decide to stop training.
   * Any difficulties? How did you resolve them?
-![](training loss graph.PNG)
+![](training_loss_graph.PNG)
 ### Performance Comparison
 
 * Clearly define the key performance metric(s).
