@@ -36,10 +36,14 @@ Show a few visualization of the data and say a few words about what you see.
 ### Problem Formulation
 
 * Define:
-  * Input / Output
+  * Input = Comment Text
+  * Output = Label(either 1 or 0 for toxic or not toxic)
   * Models
-    * Describe the different models you tried and why.
-  * Loss, Optimizer, other Hyperparameters.
+    * So far I have only used the pre trained BERT model using pytorch I do plan on either using different pretrained models or other simpler machine learning algorithms such as Bayes Algorithm. 
+  * Loss = Binary Cross Entropy
+  * Optimizer = AdamW
+  * Epochs = 4
+  * Batch Size = 32
 
 ### Training
 
