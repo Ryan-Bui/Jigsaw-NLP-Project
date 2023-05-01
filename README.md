@@ -68,18 +68,20 @@
 
 ### Future Work
 
-* What would be the next thing that you would try.
-* What are some other studies that can be done starting from here.
+* I would like to investigate how to reduce overfitting in these pre-trained models. It could be that because the models are pre-trained they really do need very few epochs to train and thus if trained any longer we get diminishing returns.
+* One thing I could look into is getting more toxic comments from various websites such as Youtube and Twitter and using those in order to get a more robust dataset.
+* One thing to note is that I did not use the full dataset given to me by the kaggle challenge and there were several columns of different categorical variables. Perhaps using theese columns can allow for a better model. 
 
 ## How to reproduce results
+* In order to reproduce these results you can do these in the following order:
+* 1st load up the data set and clean up the text however you like feel free to use the function in the notebook
+* Next downsample the data I used a 40-60 split 40 being the minority class. 
+* Next Tokenize the data using the respective pre-trained model's tokenizer
+* Be sure to save input ids using pickle or some other package so that when you want to re-train the model you don't have to create the ids again.
+* Now you can split your ids in training and validation and initialize the model. 
+* Then you fine-tune your model and wait for the results!
 
-* In this section, provide instructions at least one of the following:
-   * Reproduce your results fully, including training.
-   * Apply this package to other data. For example, how to use the model you trained.
-   * Use this package to perform their own study.
-* Also describe what resources to use for this package, if appropirate. For example, point them to Collab and TPUs.
-
-### Overview of files in repository
+### Overview of files in repositor
 
 * Describe the directory structure, if any.
 * List all relavent files and describe their role in the package.
