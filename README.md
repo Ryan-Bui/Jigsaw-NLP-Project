@@ -54,13 +54,24 @@
 ![](training_loss_graph.PNG)
 
 ### Performance Comparison
-
+## BERT(Pytorch)
+![](training_loss_graph.PNG)
 * Main Performance metrics will be the AUC for ROC curve and F1 score.
 * Show/compare results in one table.
 * Show one (or few) visualization(s) of results, for example ROC curves.
 
 ![](metric_table.PNG)
 ![](roc_curve.PNG)
+## Distilled BERT(Tensorflow)
+![](dbertgraph1.PNG)
+![](dfbertgraph2.PNG)
+![](DbertROC.PNG)
+## GPT2(Tensorflow)
+![](gpt2graph1.PNG)
+![](gpt2graph2.PNG)
+![](gpt2ROC.PNG)
+![](gpt2eval.PNG)
+## Naïve Bayes Algorithm
 
 ### Conclusions
 
