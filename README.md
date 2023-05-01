@@ -55,27 +55,33 @@
 
 ### Performance Comparison
 ## BERT(Pytorch)
+
 ![](training_loss_graph.PNG)
-* Main Performance metrics will be the AUC for ROC curve and F1 score.
-* Show/compare results in one table.
-* Show one (or few) visualization(s) of results, for example ROC curves.
 
 ![](metric_table.PNG)
 ![](roc_curve.PNG)
+* Training Time: 8 hours
 ## Distilled BERT(Tensorflow)
+
 ![](dbertgraph1.PNG)
 ![](dfbertgraph2.PNG)
 ![](DbertROC.PNG)
+* Training Time: 33 minutes
 ## GPT2(Tensorflow)
+
 ![](gpt2graph1.PNG)
 ![](gpt2graph2.PNG)
 ![](gpt2ROC.PNG)
 ![](gpt2eval.PNG)
+* Training Time: 12 minutes
 ## Naïve Bayes Algorithm
 
+![](bayesEval.PNG)
+![](ROCbayes.PNG)
+* Training Time: 20 seconds
 ### Conclusions
 
-* Whilst using both Tensorflow and Pytorch for this project I can see that both have their merits. While pytorch allows you to customize everything from top to bottom and allows for very fine-tuned models. Tensorflow is much easier to use and allows for the use of TPU's which drastically increase training speeds. While both performed simarily the Pytorch model seemed to generalize a little better than the Tensorflow one. Baye's Algorithm is a great choice for very quick results as it only took about 3 seconds for the model to run and it outputted results extremely quick. This could be used for any device that does not want to expend great computing power to get a result that is decently accurate. 
+* Whilst using both Tensorflow and Pytorch for this project I can see that both have their merits. While pytorch allows you to customize everything from top to bottom and allows for very fine-tuned models. Tensorflow is much easier to use and allows for the use of TPU's which drastically increase training speeds. While both performed simarily the Pytorch model seemed to generalize a little better than the Tensorflow one. Baye's Algorithm is a great choice for very quick results as it only took about 20 seconds for the model to run and it outputted results extremely quick. This could be used for any device that does not want to expend great computing power to get a result that is decently accurate. GPT2 also runs significantly than BERT but sacrifices performance for it.
 
 ### Future Work
 
