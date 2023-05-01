@@ -11,8 +11,6 @@
   My approach in this repository will be to use Pre-trained models as well as Baye's algorithm to classify the text. The pre-trained models will be my attempt to get the best evaluation scores and Baye's algorithm will be a model that will be fast and lightweight in case of use on a smaller device. 
   Our best model was able to achieve an F1 score of 0.91.
 
-## Summary of Workdone
-
 
 ### Data
 
@@ -51,7 +49,6 @@
   * I decided to stop training once I noticed that the validation accuracy was going down after a certain epoch.
   * Training time was a problem which was one of the reasons I swapped to Tensorflow and used TPU's.
   * Another problem was overfitting. The model's on Tensorflow had a habit of overfitting and for whatever reason the loss would have a steep decline after the first epoch as shown in the graphs. Validation accuracy would quickly plateau after the first epoch and start decreasing after more than 2 epochs. This was a problem I was struggling to solve. I had tried many variations of hyperparameters, such as changing the learning rate, changing regularization strength, number of epochs, number of training examples, and layer amount. However none seemed to fix the issue. 
-![](training_loss_graph.PNG)
 
 ### Performance Comparison
 ## BERT(Pytorch)
@@ -98,18 +95,15 @@
 * Now you can split your ids in training and validation and initialize the model. 
 * Then you fine-tune your model and wait for the results!
 
-### Overview of files in repositor
+### Overview of files in repository
 
-* Describe the directory structure, if any.
-* List all relavent files and describe their role in the package.
-* An example:
   * GPT2.ipynb: Fine-tunes the pre-trained GPT2 model and evaluates performance.(Note: This was done on Google Colab using their TPU's)
   * Bayes.ipynb: Trains Bayes model and evaluates performance.
   * DistilledBert.ipynb: This notebook contains some of the data visualization and preprocessing. It will also fine tune the pre-trained model and evaluate its performance.(Note: This was done on Google Colab using their TPU's)
   * bert-pytorch.ipynb: Fine-tunes the BERT for sequence classification model and evaluates the performance.(Note: This was done on Kaggle using their GPU's)
 
 ## Citations
-*
+* https://www.kaggle.com/code/gazu468/all-about-bert-you-need-to-know
 
 
 
