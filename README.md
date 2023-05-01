@@ -27,8 +27,8 @@
 * Per the challenge's request in the target column I made it so that if the value was greater than or equal to 0.5 then I would change to 1 and if it was less than 0.5 I would change it to a 0. 
 
 #### Data Visualization
-
-Show a few visualization of the data and say a few words about what you see.
+![](graph1.png)
+![](graph2.png)
 
 ### Problem Formulation
 
