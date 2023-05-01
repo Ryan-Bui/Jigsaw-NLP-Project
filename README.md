@@ -45,11 +45,12 @@
 ### Training
 
 * Describe the training:
-  * How you trained: software and hardware.
-  * How did training take.
-  * Training curves (loss vs epoch for test/train).
-  * How did you decide to stop training.
-  * Any difficulties? How did you resolve them?
+  * I used Kaggle notebooks for my pytorch model and then I switched over to Google Colab when I wanted to use tensorflow this was because I wanted to use TPU's to speed up training time. 
+  * For the Pytorch model each epoch took about 2 hours this was with using their gpu's as well. On Google Colab using Tensorflow and TPU's each epoch took about 15 minutes. 
+  * 
+  * I decided to stop training once I noticed that the validation accuracy was going down after a certain epoch.
+  * Training time was a problem which was one of the reasons I swapped to Tensorflow and used TPU's.
+  * Another problem was overfitting. The model's on Tensorflow had a habit of overfitting and for whatever reason the loss would have a steep decline after the first epoch as shown in the graphs. Validation accuracy would quickly plateau after the first epoch and start decreasing after more than 2 epochs. This was a problem I was struggling to solve. I had tried many variations of hyperparameters, such as changing the learning rate, changing regularization strength, number of epochs, number of training examples, and layer amount. However none seemed to fix the issue. 
 ![](training_loss_graph.PNG)
 
 ### Performance Comparison
