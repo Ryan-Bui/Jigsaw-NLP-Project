@@ -103,40 +103,13 @@
 * Describe the directory structure, if any.
 * List all relavent files and describe their role in the package.
 * An example:
-  * utils.py: various functions that are used in cleaning and visualizing data.
-  * preprocess.ipynb: Takes input data in CSV and writes out data frame after cleanup.
-  * visualization.ipynb: Creates various visualizations of the data.
-  * models.py: Contains functions that build the various models.
-  * training-model-1.ipynb: Trains the first model and saves model during training.
-  * training-model-2.ipynb: Trains the second model and saves model during training.
-  * training-model-3.ipynb: Trains the third model and saves model during training.
-  * performance.ipynb: loads multiple trained models and compares results.
-  * inference.ipynb: loads a trained model and applies it to test data to create kaggle submission.
-
-* Note that all of these notebooks should contain enough text for someone to understand what is happening.
-
-### Software Setup
-* List all of the required packages.
-* If not standard, provide or point to instruction for installing the packages.
-* Describe how to install your package.
-
-### Data
-
-* Point to where they can download the data.
-* Lead them through preprocessing steps, if necessary.
-
-### Training
-
-* Describe how to train the model
-
-#### Performance Evaluation
-
-* Describe how to run the performance evaluation.
-
+  * GPT2.ipynb: Fine-tunes the pre-trained GPT2 model and evaluates performance.(Note: This was done on Google Colab using their TPU's)
+  * Bayes.ipynb: Trains Bayes model and evaluates performance.
+  * DistilledBert.ipynb: This notebook contains some of the data visualization and preprocessing. It will also fine tune the pre-trained model and evaluate its performance.(Note: This was done on Google Colab using their TPU's)
+  * bert-pytorch.ipynb: Fine-tunes the BERT for sequence classification model and evaluates the performance.(Note: This was done on Kaggle using their GPU's)
 
 ## Citations
-
-* Provide any references.
+*
 
 
 
