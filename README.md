@@ -7,21 +7,20 @@
 
 
 ## Overview
-  * **Definition of the tasks / challenge**  Ex: The task, as defined by the Kaggle challenge is to use a time series of 12 features, sampled daily for 1 month, to predict the next day's price of a stock.
-  * **Your approach** Ex: The approach in this repository formulates the problem as regression task, using deep recurrent neural networks as the model with the full time series of features as input. We compared the performance of 3 different network architectures.
-  * **Summary of the performance achieved** Ex: Our best model was able to predict the next day stock price within 23%, 90% of the time. At the time of writing, the best performance on Kaggle of this metric is 18%.
+  The task, as defined by the Kaggle challenge is to classify toxic news comments while making sure our model does not have any unintended bias's towards certain identities. 
+  My approach in this repository will be to use Pre-trained models as well as Baye's algorithm to classify the text. The pre-trained models will be my attempt to get the best evaluation scores and Baye's algorithm will be a model that will be fast and lightweight in case of use on a smaller device. 
+  Our best model was able to achieve an F1 score of 0.90.
 
 ## Summary of Workdone
 
-Include only the sections that are relevant an appropriate.
 
 ### Data
 
 * Data:
-  * Type: The data is reprseneted in csv files which have many features however we will only focus on one column for this challenge and that is the comment_text column which displays each users comment. This is what will be our input variable. Our target or output variable will be the target column which contains the ratio of people who rated specific comment toxic.
+  * Type: The data is reprseneted in csv files which have many features however we will only focus on one column for this challenge and that is the comment_text column which displays each users comment. This is what will be our input variable. Our target or output variable will be the target column which contains the ratio of people who rated the specific comment toxic or worse. 
    
   * Size: There is about 1.21GB of data given by the challenge
-  * The challenge gives us a training set of over 1 million data points and 100000 test points however for the sake of time we will only use 100000 training points 100000 test points and we will set aside 20000 data points for validation. 1
+  * The challenge gives us a training set of over 1 million data points and 100000 test points. However because the data is very imbalanced 
 #### Preprocessing / Clean up
 
 * I had to do some preprocessing on the comment text before I could put it into the model. This involved lemmatizing the words, removing special characters, removing stop words, and punctuation. 
