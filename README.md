@@ -9,7 +9,7 @@
 ## Overview
   The task, as defined by the Kaggle challenge is to classify toxic news comments while making sure our model does not have any unintended bias's towards certain identities. 
   My approach in this repository will be to use Pre-trained models as well as Baye's algorithm to classify the text. The pre-trained models will be my attempt to get the best evaluation scores and Baye's algorithm will be a model that will be fast and lightweight in case of use on a smaller device. 
-  Our best model was able to achieve an F1 score of 0.90.
+  Our best model was able to achieve an F1 score of 0.91.
 
 ## Summary of Workdone
 
@@ -55,7 +55,7 @@
 
 ### Performance Comparison
 
-* Clearly define the key performance metric(s).
+* Main Performance metrics will be the AUC for ROC curve and F1 score.
 * Show/compare results in one table.
 * Show one (or few) visualization(s) of results, for example ROC curves.
 
@@ -64,7 +64,7 @@
 
 ### Conclusions
 
-* State any conclusions you can infer from your work. Example: LSTM work better than GRU.
+* Whilst using both Tensorflow and Pytorch for this project I can see that both have their merits. While pytorch allows you to customize everything from top to bottom and allows for very fine-tuned models. Tensorflow is much easier to use and allows for the use of TPU's which drastically increase training speeds. While both performed simarily the Pytorch model seemed to generalize a little better than the Tensorflow one. Baye's Algorithm is a great choice for very quick results as it only took about 3 seconds for the model to run and it outputted results extremely quick. This could be used for any device that does not want to expend great computing power to get a result that is decently accurate. 
 
 ### Future Work
 
