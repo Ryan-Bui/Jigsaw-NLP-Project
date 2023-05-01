@@ -20,9 +20,9 @@
   * Type: The data is reprseneted in csv files which have many features however we will only focus on one column for this challenge and that is the comment_text column which displays each users comment. This is what will be our input variable. Our target or output variable will be the target column which contains the ratio of people who rated the specific comment toxic or worse. 
    
   * Size: There is about 1.21GB of data given by the challenge
-  * The challenge gives us a training set of over 1 million data points and 100000 test points. However because the data is very imbalanced 
+  * The challenge gives us a training set of over 1 million data points and 100000 test points. However because the data is very imbalanced so I decided to downsample the data which brings the amount of training examples to about 340,000. And we will set aside 20% of that for validation.
 #### Preprocessing / Clean up
-
+* As mentioned before I decided to downsample the data so that it would be more balanced and so that my model wouldn't over train on one class. 
 * I had to do some preprocessing on the comment text before I could put it into the model. This involved lemmatizing the words, removing special characters, removing stop words, and punctuation. 
 * Per the challenge's request in the target column I made it so that if the value was greater than or equal to 0.5 then I would change to 1 and if it was less than 0.5 I would change it to a 0. 
 
@@ -36,10 +36,10 @@ Show a few visualization of the data and say a few words about what you see.
   * Input = Comment Text
   * Output = Label(either 1 or 0 for toxic or not toxic)
   * Models
-    * So far I have only used the pre trained BERT model using pytorch I do plan on either using different pretrained models or other simpler machine learning algorithms such as Bayes Algorithm. 
+    * The models I used were the pre trained BERT model using pytorch, Distilled BERT with Tensorflow, GPT2 with Tensorflow, and Naive Baye's Algorithm.
   * Loss = Binary Cross Entropy
   * Optimizer = AdamW
-  * Epochs = 4
+  * Epochs = 5
   * Batch Size = 32
 
 ### Training
